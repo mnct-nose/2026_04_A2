@@ -1,10 +1,11 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>高等教育機関の就職率の比較</title>
         <style>
             <!--表1の設定-->
-            .college-graduate th {
-                background-color: rgb(134, 134, 255);
+            .college-graduate th{
+                background-color: rgb(0, 0, 255);
             }
             .college-graduate td {
                 border: 1px solid #999;
@@ -13,7 +14,6 @@
             .college-graduate {
                 border-collapse: collapse;
             }
-
 
             <!--URLの設定-->
             .accordion  {
@@ -82,11 +82,14 @@
                 content: "-";
             }
 
-            .accordion .accordion_content .my-style ol {
+            @counter-style my-style {
                 system: numeric;
-                symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9""10""11""12""13";
+                symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9""10""11""12""13""14";
                 prefix: "(";
                 suffix: ") ";
+            }
+            ol.my-counter-style {
+                list-style-type: my-style;
             }
 
         </style>
@@ -110,7 +113,7 @@
         <p>このセクションでは、学校基本調査　高等教育機関　卒業後の状況調査のオープンデータ<sup>1,2,3,4,5,6</sup>を用いて、年度ごとの各高等教育機関の卒業者数を示す。</p>
         <p>学校基本調査　高等教育機関　卒業後の状況調査のオープンデータでは、ある年度における各高等教育機関（大学、大学院、短期大学、高等専門学校）の卒業者数と就職進学等様々な進路に進んだ人数が示されている。</p>
 
-    <p>表1　大学、短期大学、高専の卒業者数<sup>1,2,3,4,5,6</sup></p>
+    <p>表1　大学、短期大学、高専の卒業者数　<sup>(1),(2),(3),(4),(5),(6),(7),(8),(9),(10),(11),(12),(13)</sup></p>
     
     <table class="college-graduate">
         <tr><th>西暦[年]</th><th>大学 [人]</th><th>短期大学 [人]</th><th>高専 [人]</th></tr>
@@ -175,19 +178,19 @@
         <summary class="accordion_title">参考文献</summary>
         <div class="accordion_content">
             <ol class="my-style">
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001235626&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001212207&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001149132&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001124386&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001098870&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001066183&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001051738&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001037174&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001024276&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001012739&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001022018&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001024578&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
-                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001029815&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p></li>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001235626&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和6、7年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001212207&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和5、4年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001149132&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和3、2年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001124386&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査令和元年、平成30年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001098870&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成29、28年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001066183&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成27、26年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001051738&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成25、24年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001037174&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成23、22年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001024276&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成21、20年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001012739&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成19、18年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001022018&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成17、16年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001024578&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成15、14年度</a></p>
+                <li><p><a href="https://www.e-stat.go.jp/stat-search/files?tclass=000001029815&cycle=0"target="_blank">e-Stat_大学・短期大学・高等専門学校及び専修学校卒業予定者の就職内定状況等調査平成13、12年度</a></p>
             </ol>
         </div>
     </details>
